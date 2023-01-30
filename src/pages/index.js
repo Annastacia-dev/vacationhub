@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // Top Page
 
-export default function Home({title, description}) {
+export default function Home({title, description, data}) {
   return (
     <>
       <Head>
@@ -30,29 +30,33 @@ export default function Home({title, description}) {
          {description}
         </p>
         <div className={styles.grid}>
-          <a href="/destinations/destination1" className={styles.card}>
-            <h3>Destination One &rarr;</h3>
-            <p>Find in-depth information about Destination One.</p>
-          </a>
-          <a href="/destinations/destination2" className={styles.card}>
-            <h3>Destination Two &rarr;</h3>
-            <p>Find in-depth information about Destination Two.</p>
-          </a>
-          <a href="/destinations/destination3" className={styles.card}>
-            <h3>Destination Three &rarr;</h3>
-            <p>Find in-depth information about Destination Three.</p>
-          </a>
-          </div>   
+          {
+            data.map((destination) => (
+              <Link className={styles.card} href={`/destinations/${destination.tours}/${destination.id}`} key={destination.id}>
+                  <h3>{destination.name} &rarr;</h3>
+                  <p>Find in-depth information about {destination.name}.</p>
+              </Link>
+            ))
+          }
+      
+        </div>   
       </main>
     </>
   )
 }
 
-export function getServerSideProps() {
+export async function getServerSideProps() {
+
+  const {destinations} =await  import('../../data/destinations.json')
+
+  console.log(destinations)
+
+
   return {
       props: {
           title: 'Vacation Hub',
-          description: 'Find the best vacation spots'
+          description: 'Find the best vacation spots',
+          data: destinations
       }
   }
 }
