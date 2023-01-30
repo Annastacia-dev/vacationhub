@@ -32,9 +32,10 @@ export default function Home({title, description, data}) {
         <div className={styles.grid}>
           {
             data.map((destination) => (
-              <Link className={styles.card} href={`/destinations/${destination.tours}/${destination.id}`} key={destination.id}>
+              <Link className={styles.card} href={`/destinations/${destination.name}`} key={destination.id}>
+                  <Image src={destination.image} alt={destination.name} width={200} height={200} />
                   <h3>{destination.name} &rarr;</h3>
-                  <p>Find in-depth information about {destination.name}.</p>
+                  <p>Find in-depth information about {destination.name}.</p> 
               </Link>
             ))
           }
@@ -48,9 +49,6 @@ export default function Home({title, description, data}) {
 export async function getServerSideProps() {
 
   const {destinations} =await  import('../../data/destinations.json')
-
-  console.log(destinations)
-
 
   return {
       props: {

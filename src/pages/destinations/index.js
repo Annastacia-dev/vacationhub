@@ -1,31 +1,39 @@
 import styles from '@/styles/Home.module.css'
+import Link  from 'next/link'
+import Image from 'next/image'
 
 
-const DestinationsPage = ({ title, description }) => {
+const DestinationsPage = ({data}) => {
 
 
 
     return (
         <main className={styles.main}>
-            <h1>{title}</h1>
-            <p>{description}</p>
         <div className={styles.grid}>
-          <a href="/destinations/destination1" className={styles.card}>
-            <h3>Destination One &rarr;</h3>
-            <p>Find in-depth information about Destination One.</p>
-          </a>
-          <a href="/destinations/destination2" className={styles.card}>
-            <h3>Destination Two &rarr;</h3>
-            <p>Find in-depth information about Destination Two.</p>
-          </a>
-          <a href="/destinations/destination3" className={styles.card}>
-            <h3>Destination Three &rarr;</h3>
-            <p>Find in-depth information about Destination Three.</p>
-          </a>
+          {
+            data.map((destination) => (
+                <Link className={styles.card} href={`/destinations/${destination.name}`} key={destination.id}>
+                    <Image src={destination.image} alt={destination.name} width={200} height={200} />
+                    <h3>{destination.name} &rarr;</h3>
+                    <p>Find in-depth information about {destination.name}.</p>
+                </Link>
+            ))
+          }
           </div>   
       </main>
     )
 }
 
 export default DestinationsPage
+
+export async function getStaticProps() {
+
+    const {destinations} =await  import('../../../data/destinations.json')
+
+    return {
+        props: {
+            data: destinations    
+        }
+    }
+}
 
