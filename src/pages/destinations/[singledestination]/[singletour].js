@@ -31,7 +31,8 @@ const SingleDestinationTour = ({tour}) => {
                     <Image src={tour.image} alt={tour.title} width={200} height={200} />
                     <p className={styles.description}> {tour.description}
                     <span> {makeStars(tour.rating)} </span>
-                    </p>    
+                    <button className={styles.button}> Book Now </button>
+                    </p>  
                 </div>
                 < div className={styles.grid}>
                 <p className={styles.description}> ${tour.price} per person
