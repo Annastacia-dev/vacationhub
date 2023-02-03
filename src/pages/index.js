@@ -29,7 +29,7 @@ export async function getServerSideProps() {
   return {
       props: {
           title: 'Vacation Hub',
-          description: 'Find the best vacation spots',
+          description: "Your one-stop destination for all your travel needs! We are a tour and travel company that specializes in crafting memorable and unique travel experiences for our customers. Whether you're looking for a relaxing beach holiday, a thrilling adventure, or a cultural immersion, we have a range of options for you to choose from. Our expert travel advisors will work with you to tailor your itinerary to suit your interests, budget, and schedule. With our extensive network of travel partners, you can trust us to provide top-notch services and exceptional value for money. Book your next adventure with Vacation Hub and let us turn your travel dreams into reality!",
           data: destinations
       }
   }

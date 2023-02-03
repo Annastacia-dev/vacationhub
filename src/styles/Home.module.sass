@@ -8,14 +8,19 @@
 
 
 .description 
-  display: inherit
-  justify-content: inherit
-  align-items: inherit
-  font-size: 0.85rem
-  max-width: var(--max-width)
-  width: 100%
-  z-index: 2
-  font-family: var(--font-sans)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 1rem
+  padding: 1rem
+  font-size: 1rem
+  line-height: 1.5
+  text-align: center
+  color: var(--text-color)
+  font-family: 'Rubik', sans-serif
+  font-weight: 400
+  margin-bottom: 2rem
 
 
 .description a 
@@ -32,6 +37,7 @@
   background-color: rgba(var(--callout-rgb), 0.5)
   border: 1px solid rgba(var(--callout-border-rgb), 0.3)
   border-radius: var(--border-radius)
+ 
 
 
 .code 
@@ -47,11 +53,16 @@
 
 
 .card 
-  padding: 1rem 1.2rem
+  padding: 1rem 2rem
   border-radius: var(--border-radius)
   background: rgba(var(--card-rgb), 0)
   border: 1px solid rgba(var(--card-border-rgb), 0)
   transition: background 200ms, border 200ms
+  &:hover
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4)
+        transform: translateY(-0.5em)
+        cursor: pointer
+  
 
 
 .card span 
