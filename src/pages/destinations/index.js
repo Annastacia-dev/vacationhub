@@ -10,6 +10,9 @@ const DestinationsPage = ({data}) => {
     return (
         <main className={styles.main}>
         <h1 className={styles.title}> Destinations </h1>
+        <p className={styles.description}> 
+        We offer a diverse range of destinations to choose from, each with its own unique charm and appeal. From tropical beaches and bustling cities to awe-inspiring natural wonders and rich cultural heritage sites, there is something for everyone. Our destinations span the globe, from popular tourist hotspots to off-the-beaten-path locations, allowing you to create a travel experience that is truly one-of-a-kind. Whether you're looking for a romantic escape, a family-friendly adventure, or a solo travel experience, our knowledgeable travel advisors can help you find the perfect destination to meet your needs.
+        </p>
         <div className={styles.grid}>
           {
             data.map((destination) => (
