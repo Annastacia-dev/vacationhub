@@ -1,10 +1,13 @@
 import Link from 'next/link'
-import styles from '@/styles/Home.module.sass'
+import Image from 'next/image'
+
+
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header>
     <nav>
+      <Link href="/"> <i className="fa-solid fa-globe"></i></Link>
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
       <Link href="/destinations">Destinations</Link>
