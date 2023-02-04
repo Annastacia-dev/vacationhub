@@ -7,11 +7,12 @@ const SingleDestination = ({destination}) => {
         <main key={destination.id} className={styles.main}>
             <h1 className={styles.title}> {destination.name} </h1>
             <p className={styles.description}> {destination.description} </p>
+            <h2>Available Tours </h2>
             <div className={styles.grid}>
                 {
                     destination.tours.map((tour) => (
                         <Link className={styles.card} href={`/destinations/${destination.name}/${tour.title}`} key={tour.id}>
-                            <Image src={tour.image} alt={tour.title} width={200} height={200} />
+                            <Image src={tour.images[0]} alt={tour.title} width={200} height={200} />
                             <h3>{tour.title} &rarr;</h3>
                             <p>Find in-depth information about {tour.title}.</p>
                         </Link>

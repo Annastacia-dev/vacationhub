@@ -1,10 +1,26 @@
 import styles from '@/styles/Home.module.sass'
 import Link  from 'next/link'
 import Image from 'next/image'
+import React, {useState} from 'react'
 
 
 
 const SingleDestinationTour = ({tour}) => {
+
+
+    const [currentImage, setCurrentImage] = useState(0)
+
+    const handlePrevious = () => {
+        setCurrentImage((currentImage - 1 + tour.images.length) % tour.images.length);
+      };
+
+    const handleNext = () => {
+        setCurrentImage((currentImage + 1) % tour.images.length);
+        };
+      
+    
+
+
 
     const makeStars = (rating) => {
         const stars = []
@@ -27,14 +43,22 @@ const SingleDestinationTour = ({tour}) => {
         <div className={styles.container}>
             <main className={styles.main}>
                 <h1 className={styles.title}> {tour.title} </h1>
-                <div className={styles.grid}>
-                    <Image src={tour.image} alt={tour.title} width={200} height={200} />
+                <div className='image-slider'>
+                    <div className="image-container">
+                        <img className="slider-image"  src={tour.images[currentImage]} alt={tour.title}/>
+                    </div>
+
+                    <div className="button-container">
+                        <button className='previous-button' onClick={handlePrevious}>&larr;</button>
+                        <button className='next-button' onClick={handleNext}>&rarr;</button>
+                    </div>    
+                </div>
+
                     <p className={styles.description}> {tour.description}
                     <span> {makeStars(tour.rating)} </span>
                     <button className={styles.button}> Book Now </button>
                     </p>  
-                </div>
-                < div className={styles.grid}>
+                <div className={styles.grid}>
                 <p className={styles.description}> ${tour.price} per person
                 </p>
                 <p className={styles.description}>Duration: {tour.duration} </p>
