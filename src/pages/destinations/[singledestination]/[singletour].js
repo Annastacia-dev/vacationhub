@@ -58,14 +58,14 @@ const SingleDestinationTour = ({tour}) => {
                     <span> {makeStars(tour.rating)} </span>
                     <button className={styles.button}> Book Now </button>
                     </p>  
-                <div className={styles.grid}>
-                <p className={styles.description}> ${tour.price} per person
+                <div className="grid">
+                <p> ${tour.price} per person
                 </p>
-                <p className={styles.description}>Duration: {tour.duration} </p>
-                <p className={styles.description}>Included: {
+                <p>Duration: {tour.duration} </p>
+                <p>Included: {
                 tour.included.split(',').map((item, index) => (<li key={index}>{item}</li>))}
                 </p>
-                <p className={styles.description}>Excluded: {
+                <p>Excluded: {
                 tour.excluded.split(',').map((item, index) => (<li key={index}>{item}</li>))}
                 </p>
                 </div>
