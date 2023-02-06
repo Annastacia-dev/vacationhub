@@ -5,6 +5,7 @@ import React, {useState} from 'react'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { Row, Col, Form } from 'react-bootstrap';
+import { useRouter } from 'next/router'
 
 
 
@@ -39,6 +40,32 @@ const SingleDestinationTour = ({tour}) => {
         return stars
     }
 
+    const router = useRouter()
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [date, setDate] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const tourTitle  = router?.query?.singletour
+        const booking = {
+            id: Math.floor(Math.random() * 10000) + 1,
+            name,
+            email,
+            phone,
+            date,
+        }
+        try {
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+   
+
 
 
 
@@ -70,17 +97,19 @@ const SingleDestinationTour = ({tour}) => {
                             </div>
                             <div className="content">
                             {' '}
-                            <Form className="form">
+                        <Form className="form" onSubmit={handleSubmit}>
                         <Row className="justify-content-center">
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicFirstName">
                                     <Form.Control name="firstName" type="text" placeholder='Enter Full Name*' required autoFocus autoComplete='on'
+                                    value={name} onChange={(e) => setName(e.target.value)}
                                      />
                                 </Form.Group>
                             </Col>
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Control name="lastName" type="text" placeholder="Enter email*" required autoComplete='on'
+                                    value={email} onChange={(e) => setEmail(e.target.value)}
                                      />
                                 </Form.Group>
                             </Col>
@@ -89,12 +118,14 @@ const SingleDestinationTour = ({tour}) => {
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicNumberOfPeople">
                                     <Form.Control name="firstName" type="number" placeholder='Enter Phone Number*' required autoFocus autoComplete='on'
+                                    value={phone} onChange={(e) => setPhone(e.target.value)}
                                         />
                                 </Form.Group>
                             </Col>
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicDate">
                                     <Form.Control name="lastName" type="date" placeholder="Enter email*" required autoComplete='on'
+                                    value={date} onChange={(e) => setDate(e.target.value)}
                                         />
                                 <Form.Label>Choose a date</Form.Label>
                             </Form.Group>

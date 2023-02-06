@@ -15,7 +15,17 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "2 hours",
                     "location": "Burj Khalifa, Dubai",
-                    "rating": 4.5
+                    "rating": 4.5,
+                    "bookings": [
+                        {
+                            "id": 1,
+                            "name": "John Doe",
+                            "email": "john@gmail.com",
+                            "phone": "123456789",
+                            "date": "2021-05-01"
+                        }
+                    ]
+
                 },
                 {
                     "title": "Dubai Mall",
@@ -26,7 +36,9 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "3 hours",
                     "location": "Dubai Mall, Dubai",
-                    "rating": 4.7
+                    "rating": 4.7,
+                    "bookings": []
+
                 },
                 {
                     "title": "Dubai Aquarium",
@@ -37,7 +49,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "2 hours",
                     "location": "Dubai Aquarium, Dubai",
-                    "rating": 3.8
+                    "rating": 3.8,
+                    "bookings": []
                 }
 
             ]
@@ -57,7 +70,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "2 hours",
                     "location": "Eiffel Tower, Paris",
-                    "rating": 4.8
+                    "rating": 4.8,
+                    "bookings": []
                 },
                 {
                     "title": "Louvre Museum",
@@ -68,7 +82,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "3 hours",
                     "location": "Louvre Museum, Paris",
-                    "rating": 4.5
+                    "rating": 4.5,
+                    "bookings": []
                 }
             ]
         },
@@ -87,7 +102,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "1 hour",
                     "location": "Big Ben, London",
-                    "rating": 3.9
+                    "rating": 3.9,
+                    "bookings": []
                 },
                 {
                     "title": "London Eye",
@@ -98,7 +114,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "2 hours",
                     "location": "London Eye, London",
-                    "rating": 4.8
+                    "rating": 4.8,
+                    "bookings": []
                 }
             ]
         },
@@ -117,7 +134,8 @@
                     "excluded": "Food, Drinks, Tips",
                     "duration": "1 hour",
                     "location": "Statue of Liberty, New York",
-                    "rating": 3.5
+                    "rating": 3.5,
+                    "bookings": []
                 }
             ]
         }
