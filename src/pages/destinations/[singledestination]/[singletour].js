@@ -2,6 +2,9 @@ import styles from '@/styles/Home.module.sass'
 import Link  from 'next/link'
 import Image from 'next/image'
 import React, {useState} from 'react'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import { Row, Col, Form } from 'react-bootstrap';
 
 
 
@@ -56,7 +59,55 @@ const SingleDestinationTour = ({tour}) => {
 
                     <p className={styles.description}> {tour.description}
                     <span> {makeStars(tour.rating)} </span>
-                    <button className={styles.button}> Book Now </button>
+                    <Popup trigger={<button className='button' >Book Now</button>} position="right center" modal nested>
+                       { close => ( <div className="modal">
+                            <button className="close-button" onClick={close}>
+                            &times;
+                            </button>
+                            <div className="header">
+                            {' '} 
+                             Book {tour.title} tour
+                            </div>
+                            <div className="content">
+                            {' '}
+                            <Form className="form">
+                        <Row className="justify-content-center">
+                            <Col lg="6">
+                                <Form.Group className="mb-3" controlId="formBasicFirstName">
+                                    <Form.Control name="firstName" type="text" placeholder='Enter Full Name*' required autoFocus autoComplete='on'
+                                     />
+                                </Form.Group>
+                            </Col>
+                            <Col lg="6">
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Control name="lastName" type="text" placeholder="Enter email*" required autoComplete='on'
+                                     />
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                            <Col lg="6">
+                                <Form.Group className="mb-3" controlId="formBasicNumberOfPeople">
+                                    <Form.Control name="firstName" type="number" placeholder='Enter Phone Number*' required autoFocus autoComplete='on'
+                                        />
+                                </Form.Group>
+                            </Col>
+                            <Col lg="6">
+                                <Form.Group className="mb-3" controlId="formBasicDate">
+                                    <Form.Control name="lastName" type="date" placeholder="Enter email*" required autoComplete='on'
+                                        />
+                                <Form.Label>Choose a date</Form.Label>
+                            </Form.Group>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                            <button className="button" type="submit"> Submit </button>
+                        </Row>
+                        </Form>      
+                            </div>
+                        </div>
+                        )}
+                    </Popup>      
                     </p>  
                 <div className="grid">
                 <p> ${tour.price} per person
