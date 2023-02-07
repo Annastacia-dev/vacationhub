@@ -47,7 +47,7 @@ const SingleDestinationTour = ({tour}) => {
     const [phone, setPhone] = useState('')
     const [date, setDate] = useState('')
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const tourTitle  = router?.query?.singletour
         const booking = {
@@ -56,12 +56,32 @@ const SingleDestinationTour = ({tour}) => {
             email,
             phone,
             date,
+            tourTitle
         }
         try {
-            
+            const res = await fetch('/api/bookings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(booking)
+            })
+            if(!res.ok) {
+                throw new Error('Something went wrong')
+            }
+            const data = await res.json()
+            alert('Booking created')
+            console.log(data)
         } catch (error) {
             console.log(error)
         }
+
+        setName('')
+        setEmail('')
+        setPhone('')
+        setDate('')
+        window.location.reload()
+
     }
 
    
