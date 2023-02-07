@@ -26,7 +26,7 @@ const SingleDestination = ({destination}) => {
 export default SingleDestination
 
 export async function getStaticPaths() {
-    const {destinations} =await  import('../../../../data/destinations.json')
+    const {destinations} =await  import('../../../../tmp/destinations.json')
 
     const paths = destinations.map((destination) => ({
         params: {singledestination: destination.name}
@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-    const {destinations} =await  import('../../../../data/destinations.json')
+    const {destinations} =await  import('../../../../tmp/destinations.json')
 
     const destination = destinations.find((destination) => destination.name === params.singledestination)
 

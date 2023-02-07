@@ -29,7 +29,7 @@ export default DestinationsPage
 
 export async function getStaticProps() {
 
-    const {destinations} =await  import('../../../data/destinations.json')
+    const {destinations} =await  import('../../../tmp/destinations.json')
 
     return {
         props: {

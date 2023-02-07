@@ -255,7 +255,7 @@ const SingleDestinationTour = ({tour}) => {
 export default SingleDestinationTour
 
 export async function getStaticPaths() {
-    const {destinations} =await  import('../../../../data/destinations.json')
+    const {destinations} =await  import('../../../../tmp/destinations.json')
 
     const tourPaths = destinations.map((destination) => (
         destination.tours.map((tour) => ({
@@ -272,7 +272,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-    const {destinations} =await  import('../../../../data/destinations.json')
+    const {destinations} =await  import('../../../../tmp/destinations.json')
 
     const destination = destinations.find((destination) => destination.name === params.singledestination)
     const tour = destination.tours.find((tour) => tour.title === params.singletour)

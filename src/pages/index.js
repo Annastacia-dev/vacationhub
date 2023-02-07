@@ -24,7 +24,7 @@ export default function Home({title, description, data}) {
 
 export async function getServerSideProps() {
 
-  const {destinations} =await  import('../../data/destinations.json')
+  const {destinations} =await  import('../../tmp/destinations.json')
 
   return {
       props: {
