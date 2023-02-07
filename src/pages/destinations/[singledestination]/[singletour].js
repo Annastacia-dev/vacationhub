@@ -123,6 +123,17 @@ const SingleDestinationTour = ({tour}) => {
             })
             if(!res.ok) {
                 throw new Error('Something went wrong')
+                toast .error('Booking failed please try again later',{
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: 'colored',
+                    transition: 'slide'
+                })
             }
             const data = await res.json()
             toast.success('Booking successful',{
