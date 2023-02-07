@@ -6,7 +6,7 @@ export default function handler(req, res){
     const { method } = req
 
     function buildPath(){// 
-        return path.join(process.cwd(), 'tmp', 'destinations.json') // process.cwd() is the current working directory, which is the root of the project, then we join the data folder and the destinations.json file
+        return path.join(process.cwd(), '/tmp', 'destinations.json') // process.cwd() is the current working directory, which is the root of the project, then we join the data folder and the destinations.json file
     }
 
     function getAllDestinations(filePath){
