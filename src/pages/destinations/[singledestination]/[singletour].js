@@ -6,6 +6,8 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { Row, Col, Form } from 'react-bootstrap';
 import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -22,9 +24,6 @@ const SingleDestinationTour = ({tour}) => {
         setCurrentImage((currentImage + 1) % tour.images.length);
         };
       
-    
-
-
 
     const makeStars = (rating) => {
         const stars = []
@@ -46,6 +45,62 @@ const SingleDestinationTour = ({tour}) => {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [date, setDate] = useState('')
+    const [emailError, setEmailError] = useState('')
+    const [phoneError, setPhoneError] = useState('')
+    const [dateError, setDateError] = useState('')
+
+    // validate email
+    const validateEmail = (email) => {
+        const re = /\S+@\S+\.\S+/
+        return re.test(email)
+    }
+
+    // validate phone
+    const validatePhone = (phone) => {
+        // must be 10 digits
+        const re = /^\d{10}$/
+        return re.test(phone)
+    }
+
+    // validate date
+    const validateDate = (date) => {
+        // must be in the future
+        const today = new Date()
+        const selectedDate = new Date(date)
+        return selectedDate > today
+    }
+
+    const handleNameChange = (e) => {
+        setName(e.target.value)
+    }
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value)
+        if(!validateEmail(e.target.value)) {
+            setEmailError('Email is invalid')
+        } else {
+            setEmailError('')
+        }
+    }
+
+    const handlePhoneChange = (e) => {
+        setPhone(e.target.value)
+        if(!validatePhone(e.target.value)) {
+            setPhoneError('Phone number is invalid')
+        } else {
+            setPhoneError('')
+        }
+    }
+
+    const handleDateChange = (e) => {
+        setDate(e.target.value)
+        if(!validateDate(e.target.value)) {
+            setDateError('Date must be in the future')
+        } else {
+            setDateError('')
+        }
+    }
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -70,7 +125,18 @@ const SingleDestinationTour = ({tour}) => {
                 throw new Error('Something went wrong')
             }
             const data = await res.json()
-            alert('Booking created')
+            toast.success('Booking successful',{
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'colored',
+                transition: 'slide'
+
+            })
             console.log(data)
         } catch (error) {
             console.log(error)
@@ -91,6 +157,17 @@ const SingleDestinationTour = ({tour}) => {
 
     return (
         <div className={styles.container}>
+            <ToastContainer
+                position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+             />
             <main className={styles.main}>
                 <h1 className={styles.title}> {tour.title} </h1>
                 <div className='image-slider'>
@@ -122,33 +199,36 @@ const SingleDestinationTour = ({tour}) => {
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicFirstName">
                                     <Form.Control name="firstName" type="text" placeholder='Enter Full Name*' required autoFocus autoComplete='on'
-                                    value={name} onChange={(e) => setName(e.target.value)}
+                                    value={name} onChange={handleNameChange}
                                      />
                                 </Form.Group>
                             </Col>
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Control name="lastName" type="text" placeholder="Enter email*" required autoComplete='on'
-                                    value={email} onChange={(e) => setEmail(e.target.value)}
+                                    value={email} onChange={handleEmailChange}
                                      />
                                 </Form.Group>
+                                {emailError && <p className="error">{emailError}</p>}
                             </Col>
                         </Row>
                         <Row className="justify-content-center">
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicNumberOfPeople">
                                     <Form.Control name="firstName" type="number" placeholder='Enter Phone Number*' required autoFocus autoComplete='on'
-                                    value={phone} onChange={(e) => setPhone(e.target.value)}
+                                    value={phone} onChange={handlePhoneChange}
                                         />
                                 </Form.Group>
+                                {phoneError && <p className="error">{phoneError}</p>}
                             </Col>
                             <Col lg="6">
                                 <Form.Group className="mb-3" controlId="formBasicDate">
                                     <Form.Control name="lastName" type="date" placeholder="Enter email*" required autoComplete='on'
-                                    value={date} onChange={(e) => setDate(e.target.value)}
+                                    value={date} onChange={handleDateChange}
                                         />
                                 <Form.Label>Choose a date</Form.Label>
                             </Form.Group>
+                            {dateError && <p className="error">{dateError}</p>}
                             </Col>
                         </Row>
                         <Row className="justify-content-center">
