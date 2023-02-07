@@ -1,1 +1,167 @@
-{"destinations":[{"id":1,"name":"Dubai","description":"Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.","image":"https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZHViYWl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60","tours":[{"title":"Burj Khalifa","description":"Burj Khalifa is a skyscraper in Dubai, United Arab Emirates. With a total height of 829.8 m and a roof height (excluding antenna) of 828 m, the Burj Khalifa has been the tallest structure and building in the world since its topping out in 2009.","images":["https://images.unsplash.com/photo-1579525612525-053cd3e8cbd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyaiUyMGtoYWxpZmF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60","https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyaiUyMGtoYWxpZmF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"],"price":75,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"2 hours","location":"Burj Khalifa, Dubai","rating":4.5,"bookings":[{"id":1,"name":"John Doe","email":"john@gmail.com","phone":"123456789","date":"2021-05-01","tourTitle":"Burj Khalifa"}]},{"title":"Dubai Mall","description":"Dubai Mall is a shopping mall in Dubai. It is the largest mall in the world by total land area, and the 26th-largest shopping mall in the world by gross leasable area. It is also the 3rd-largest shopping mall in the world by gross leasable area, and the 5th-busiest shopping mall in the world by the number of visitors.","images":["https://images.unsplash.com/photo-1562280963-8a5475740a10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWklMjBtYWxsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":20,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"3 hours","location":"Dubai Mall, Dubai","rating":4.7,"bookings":[]},{"title":"Dubai Aquarium","description":"Dubai Aquarium & Underwater Zoo is a public aquarium located on the ground floor of The Dubai Mall in Dubai, United Arab Emirates. It is the largest suspended aquarium in the world, and the second largest aquarium in the world.","images":["https://images.unsplash.com/photo-1502998732392-615e9b445fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZHViYWklMjBtYWxsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":60,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"2 hours","location":"Dubai Aquarium, Dubai","rating":3.8,"bookings":[]}]},{"id":2,"name":"Paris","description":"Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.","image":"https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60","tours":[{"title":"Eiffel Tower","description":"The Eiffel Tower is an iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.","images":["https://images.unsplash.com/photo-1505205296326-2178af1b47bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWlmZmVsJTIwdG93ZXIlMjBhdCUyMG5pZ2h0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":81,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"2 hours","location":"Eiffel Tower, Paris","rating":4.8,"bookings":[]},{"title":"Louvre Museum","description":"The Louvre or the Louvre Museum is the world's largest art museum and a historic monument in Paris, France. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement.","images":["https://images.unsplash.com/photo-1653836624197-a0c7ab57a2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxvdXZyZSUyMG11c2V1bSUyMHBhcmlzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":70,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"3 hours","location":"Louvre Museum, Paris","rating":4.5,"bookings":[]}]},{"id":3,"name":"London","description":"London is the capital of England and the United Kingdom. Standing on the River Thames in the south east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia.","image":"https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60","tours":[{"title":"Big Ben","description":"Big Ben is the nickname for the Great Bell of the striking clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower.","images":["https://images.unsplash.com/photo-1475463606759-53a070b44126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlnJTIwYmVufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":25,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"1 hour","location":"Big Ben, London","rating":3.9,"bookings":[{"id":6048,"name":"kelvin","email":"kelvin@gmail.com","phone":"123","date":"2023-02-09","tourTitle":"Big Ben"}]},{"title":"London Eye","description":"The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. The structure is 443 feet (135 m) tall and the wheel has a diameter of 394 feet (120 m). When it opened to the public in 2000, it was the world's tallest Ferris wheel.","images":["https://images.unsplash.com/photo-1633912343155-6073bc1075e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bG9uZG9uJTIwZXllfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"],"price":30,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"2 hours","location":"London Eye, London","rating":4.8,"bookings":[]}]},{"id":4,"name":"New York","description":"New York City, often called simply New York and abbreviated as NYC, is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States.","image":"https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmV3JTIweW9ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60","tours":[{"title":"Statue of Liberty","description":"The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and built by Gustave Eiffel.","images":["https://images.unsplash.com/photo-1562961857-b1ba8f9dbd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN0YXR1ZSUyMG9mJTIwbGliZXJ0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"],"price":53,"included":"Transportation, Guide, Entrance Fee","excluded":"Food, Drinks, Tips","duration":"1 hour","location":"Statue of Liberty, New York","rating":3.5,"bookings":[]}]}]}
+{
+    "destinations": [
+        {
+            "id": 1,
+            "name": "Dubai",
+            "description": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.",
+            "image": "https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZHViYWl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "tours": [
+                {
+                    "title": "Burj Khalifa",
+                    "description": "Burj Khalifa is a skyscraper in Dubai, United Arab Emirates. With a total height of 829.8 m and a roof height (excluding antenna) of 828 m, the Burj Khalifa has been the tallest structure and building in the world since its topping out in 2009.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1579525612525-053cd3e8cbd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyaiUyMGtoYWxpZmF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                        "https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyaiUyMGtoYWxpZmF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 75,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "2 hours",
+                    "location": "Burj Khalifa, Dubai",
+                    "rating": 4.5,
+                    "bookings": [
+                        {
+                            "id": 1,
+                            "name": "John Doe",
+                            "email": "john@gmail.com",
+                            "phone": "123456789",
+                            "date": "2021-05-01",
+                            "tourTitle": "Burj Khalifa"
+                        }
+                    ]
+                },
+                {
+                    "title": "Dubai Mall",
+                    "description": "Dubai Mall is a shopping mall in Dubai. It is the largest mall in the world by total land area, and the 26th-largest shopping mall in the world by gross leasable area. It is also the 3rd-largest shopping mall in the world by gross leasable area, and the 5th-busiest shopping mall in the world by the number of visitors.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1562280963-8a5475740a10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWklMjBtYWxsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 20,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "3 hours",
+                    "location": "Dubai Mall, Dubai",
+                    "rating": 4.7,
+                    "bookings": []
+                },
+                {
+                    "title": "Dubai Aquarium",
+                    "description": "Dubai Aquarium & Underwater Zoo is a public aquarium located on the ground floor of The Dubai Mall in Dubai, United Arab Emirates. It is the largest suspended aquarium in the world, and the second largest aquarium in the world.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1502998732392-615e9b445fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZHViYWklMjBtYWxsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 60,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "2 hours",
+                    "location": "Dubai Aquarium, Dubai",
+                    "rating": 3.8,
+                    "bookings": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Paris",
+            "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.",
+            "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "tours": [
+                {
+                    "title": "Eiffel Tower",
+                    "description": "The Eiffel Tower is an iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1505205296326-2178af1b47bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWlmZmVsJTIwdG93ZXIlMjBhdCUyMG5pZ2h0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 81,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "2 hours",
+                    "location": "Eiffel Tower, Paris",
+                    "rating": 4.8,
+                    "bookings": []
+                },
+                {
+                    "title": "Louvre Museum",
+                    "description": "The Louvre or the Louvre Museum is the world's largest art museum and a historic monument in Paris, France. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1653836624197-a0c7ab57a2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxvdXZyZSUyMG11c2V1bSUyMHBhcmlzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 70,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "3 hours",
+                    "location": "Louvre Museum, Paris",
+                    "rating": 4.5,
+                    "bookings": []
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "London",
+            "description": "London is the capital of England and the United Kingdom. Standing on the River Thames in the south east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea, London has been a major settlement for two millennia.",
+            "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "tours": [
+                {
+                    "title": "Big Ben",
+                    "description": "Big Ben is the nickname for the Great Bell of the striking clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1475463606759-53a070b44126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlnJTIwYmVufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 25,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "1 hour",
+                    "location": "Big Ben, London",
+                    "rating": 3.9,
+                    "bookings": [
+                        {
+                            "id": 6048,
+                            "name": "kelvin",
+                            "email": "kelvin@gmail.com",
+                            "phone": "123",
+                            "date": "2023-02-09",
+                            "tourTitle": "Big Ben"
+                        }
+                    ]
+                },
+                {
+                    "title": "London Eye",
+                    "description": "The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. The structure is 443 feet (135 m) tall and the wheel has a diameter of 394 feet (120 m). When it opened to the public in 2000, it was the world's tallest Ferris wheel.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1633912343155-6073bc1075e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bG9uZG9uJTIwZXllfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 30,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "2 hours",
+                    "location": "London Eye, London",
+                    "rating": 4.8,
+                    "bookings": []
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "New York",
+            "description": "New York City, often called simply New York and abbreviated as NYC, is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States.",
+            "image": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmV3JTIweW9ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "tours": [
+                {
+                    "title": "Statue of Liberty",
+                    "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and built by Gustave Eiffel.",
+                    "images": [
+                        "https://images.unsplash.com/photo-1562961857-b1ba8f9dbd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN0YXR1ZSUyMG9mJTIwbGliZXJ0eXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                    ],
+                    "price": 53,
+                    "included": "Transportation, Guide, Entrance Fee",
+                    "excluded": "Food, Drinks, Tips",
+                    "duration": "1 hour",
+                    "location": "Statue of Liberty, New York",
+                    "rating": 3.5,
+                    "bookings": []
+                }
+            ]
+        }
+    ]
+}
