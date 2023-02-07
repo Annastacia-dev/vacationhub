@@ -150,11 +150,6 @@ const SingleDestinationTour = ({tour}) => {
 
     }
 
-   
-
-
-
-
     return (
         <div className={styles.container}>
             <ToastContainer
